@@ -5,23 +5,23 @@ const OverviewSection = () => {
   const features = [
     {
       icon: Brain,
-      title: "AI-Driven Architecture",
-      description: "Understanding how autonomous AI agents reshape traditional software architecture patterns and design decisions."
+      title: "Software Architecture for AI-Enabled Systems",
+      description: "Learn how traditional architectural methods are being extended to handle the complexities of ML, LLMs, and multi-agent intelligence systems."
     },
     {
       icon: Code,
-      title: "Practical Implementation",
-      description: "Hands-on examples and real-world case studies demonstrating agentic AI integration in modern systems."
+      title: "AI for Software Architecture",
+      description: "Explore how generative AI can support architectural decision-making, automate documentation, and guide design trade-offs."
     },
     {
       icon: Lightbulb,
-      title: "Future Insights",
-      description: "Exploring emerging trends and future directions in AI-augmented software development methodologies."
+      title: "New Quality Attributes",
+      description: "Beyond traditional attributes like performance and maintainability, discover observability, uncertainty, explainability, and trustworthiness."
     },
     {
       icon: Target,
-      title: "Strategic Planning",
-      description: "Best practices for architecting systems that leverage autonomous AI agents effectively and safely."
+      title: "Hands-on Learning",
+      description: "Practical sessions with ArchCoPilot tool demonstrations and architecting agentic AI systems for real-world scenarios."
     }
   ];
 
@@ -33,9 +33,9 @@ const OverviewSection = () => {
             Tutorial Overview
           </h2>
           <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
-            This tutorial provides a comprehensive exploration of how Agentic AI is transforming 
-            software architecture, offering both theoretical foundations and practical insights 
-            for modern system design.
+            The rapid advancements in generative AI—especially large language models (LLMs)—have introduced 
+            new possibilities in how software systems are designed, developed, and evolved. This tutorial 
+            explores the growing connection between software architecture and AI with a dual focus.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8 mb-16">
@@ -55,45 +55,81 @@ const OverviewSection = () => {
             ))}
           </div>
 
+          <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
+            <h3 className="text-2xl font-semibold mb-6 text-gray-800">
+              Tutorial Focus Areas
+            </h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h4 className="text-lg font-semibold mb-4 text-purple-600">
+                  1. Software Architecture for AI-Enabled Systems
+                </h4>
+                <p className="text-gray-600 mb-4">
+                  Traditional architectural methods are being extended to handle the complexities of:
+                </p>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• Machine Learning models</li>
+                  <li>• Large Language Models (LLMs)</li>
+                  <li>• Multi-agent intelligence systems</li>
+                  <li>• Dynamic, learning-enabled components</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold mb-4 text-purple-600">
+                  2. AI for Software Architecture Practice
+                </h4>
+                <p className="text-gray-600 mb-4">
+                  Using generative AI to support software architecture through:
+                </p>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• Automation of architectural tasks</li>
+                  <li>• Design assistance and recommendations</li>
+                  <li>• Decision support systems</li>
+                  <li>• Documentation generation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
           <div className="bg-white rounded-xl p-8 shadow-lg">
             <h3 className="text-2xl font-semibold mb-6 text-gray-800">
-              What You'll Learn
+              Key Quality Attributes for AI-Enabled Systems
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 flex-shrink-0"></div>
-                  <span className="text-gray-700">Fundamentals of Agentic AI systems</span>
+                  <span className="text-gray-700">Observability and monitoring</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 flex-shrink-0"></div>
-                  <span className="text-gray-700">Architectural patterns for AI agents</span>
+                  <span className="text-gray-700">Uncertainty management</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 flex-shrink-0"></div>
-                  <span className="text-gray-700">Design principles and best practices</span>
+                  <span className="text-gray-700">Explainability and interpretability</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 flex-shrink-0"></div>
-                  <span className="text-gray-700">Security and ethical considerations</span>
+                  <span className="text-gray-700">Trustworthiness and reliability</span>
                 </li>
               </ul>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 flex-shrink-0"></div>
-                  <span className="text-gray-700">Integration strategies and challenges</span>
+                  <span className="text-gray-700">Data eccentricity handling</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 flex-shrink-0"></div>
-                  <span className="text-gray-700">Performance optimization techniques</span>
+                  <span className="text-gray-700">Evolvability of agentic behavior</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 flex-shrink-0"></div>
-                  <span className="text-gray-700">Real-world case studies</span>
+                  <span className="text-gray-700">Adaptability and learning</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 flex-shrink-0"></div>
-                  <span className="text-gray-700">Future trends and opportunities</span>
+                  <span className="text-gray-700">Autonomous decision-making</span>
                 </li>
               </ul>
             </div>

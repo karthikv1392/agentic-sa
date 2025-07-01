@@ -1,63 +1,56 @@
 
-import { Clock, Coffee, Presentation, Users } from "lucide-react";
+import { Clock, Coffee, Presentation, Users, Wrench } from "lucide-react";
 
 const ScheduleSection = () => {
   const schedule = [
     {
-      time: "09:00 - 09:15",
-      title: "Welcome & Introduction",
+      time: "09:00 - 09:05",
+      title: "Welcome",
       description: "Tutorial overview and speaker introductions",
       icon: Users,
       type: "intro"
     },
     {
-      time: "09:15 - 10:30",
-      title: "Foundations of Agentic AI",
-      description: "Core concepts, definitions, and theoretical background",
+      time: "09:05 - 09:25",
+      title: "Session 1: Introducing Software Architecture for ML (SAML)",
+      description: "Introduction to basic concepts in ML-enabled systems (10 mins) • Challenges in architecting AI-enabled systems through a case study (10 mins)",
       icon: Presentation,
       type: "session"
     },
     {
-      time: "10:30 - 11:00",
+      time: "09:25 - 10:00",
+      title: "Session 2: LLMs for Software Architecture (LLM4SA)",
+      description: "LLM for Software Architecture and terminology (35 mins)",
+      icon: Presentation,
+      type: "session"
+    },
+    {
+      time: "10:00 - 10:30",
       title: "Coffee Break",
       description: "Networking and refreshments",
       icon: Coffee,
       type: "break"
     },
     {
-      time: "11:00 - 12:15",
-      title: "Architectural Patterns & Design",
-      description: "Patterns, principles, and design considerations for agentic systems",
-      icon: Presentation,
-      type: "session"
+      time: "10:30 - 11:30",
+      title: "Session 2 Continuation: LLMs for Software Architecture",
+      description: "Demo of ArchCoPilot tool (10 mins) • Discussions with the audience (20 mins) • Hands-on with ArchCoPilot (30 mins)",
+      icon: Wrench,
+      type: "hands-on"
     },
     {
-      time: "12:15 - 13:30",
-      title: "Lunch Break",
-      description: "Extended break for lunch and networking",
-      icon: Coffee,
-      type: "break"
+      time: "11:20 - 12:25",
+      title: "Session 3: Architecting Agentic AI Systems",
+      description: "Introduction to Agentic AI systems (15 mins) • Architecting Agentic AI systems (20 mins) • Case study: Agentic AI framework for autonomous CloudOps (10 mins) • Hands-on activity (20 mins)",
+      icon: Wrench,
+      type: "hands-on"
     },
     {
-      time: "13:30 - 14:45",
-      title: "Implementation & Case Studies",
-      description: "Real-world examples and hands-on implementation strategies",
-      icon: Presentation,
-      type: "session"
-    },
-    {
-      time: "14:45 - 15:15",
-      title: "Coffee Break",
-      description: "Afternoon refreshments and discussion",
-      icon: Coffee,
-      type: "break"
-    },
-    {
-      time: "15:15 - 16:30",
-      title: "Future Directions & Q&A",
-      description: "Emerging trends, challenges, and interactive discussion",
-      icon: Presentation,
-      type: "session"
+      time: "12:25 - 12:30",
+      title: "Tutorial Closing",
+      description: "Final remarks and wrap-up",
+      icon: Users,
+      type: "closing"
     }
   ];
 
@@ -67,8 +60,12 @@ const ScheduleSection = () => {
         return 'bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-400';
       case 'session':
         return 'bg-gradient-to-r from-purple-50 to-blue-50 border-l-4 border-purple-400';
+      case 'hands-on':
+        return 'bg-gradient-to-r from-indigo-50 to-cyan-50 border-l-4 border-indigo-400';
       case 'break':
         return 'bg-gradient-to-r from-orange-50 to-yellow-50 border-l-4 border-orange-400';
+      case 'closing':
+        return 'bg-gradient-to-r from-gray-50 to-slate-50 border-l-4 border-gray-400';
       default:
         return 'bg-gray-50 border-l-4 border-gray-400';
     }
@@ -82,7 +79,7 @@ const ScheduleSection = () => {
             Tutorial Schedule
           </h2>
           <p className="text-xl text-gray-600 text-center mb-16">
-            A full-day comprehensive tutorial on Software Architecture in the Age of Agentic AI
+            A comprehensive morning tutorial covering both theoretical foundations and hands-on practice
           </p>
 
           <div className="space-y-6">
@@ -116,23 +113,52 @@ const ScheduleSection = () => {
 
           <div className="mt-16 bg-white rounded-xl p-8 shadow-lg">
             <h3 className="text-2xl font-semibold mb-6 text-gray-800 text-center">
-              Important Information
+              Tutorial Highlights
+            </h3>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Presentation className="h-8 w-8 text-purple-600" />
+                </div>
+                <h4 className="text-lg font-semibold mb-3 text-gray-800">Theory & Concepts</h4>
+                <p className="text-gray-600">Foundational knowledge on AI-enabled software architecture</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Wrench className="h-8 w-8 text-indigo-600" />
+                </div>
+                <h4 className="text-lg font-semibold mb-3 text-gray-800">Hands-on Practice</h4>
+                <p className="text-gray-600">Interactive sessions with ArchCoPilot and practical exercises</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="h-8 w-8 text-green-600" />
+                </div>
+                <h4 className="text-lg font-semibold mb-3 text-gray-800">Case Studies</h4>
+                <p className="text-gray-600">Real-world examples including autonomous CloudOps systems</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 bg-white rounded-xl p-8 shadow-lg">
+            <h3 className="text-2xl font-semibold mb-6 text-gray-800 text-center">
+              Prerequisites & What to Bring
             </h3>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <h4 className="text-lg font-semibold mb-3 text-gray-800">Prerequisites</h4>
                 <ul className="space-y-2 text-gray-600">
-                  <li>• Basic understanding of software architecture</li>
-                  <li>• Familiarity with AI/ML concepts (helpful but not required)</li>
-                  <li>• Experience with modern software development practices</li>
+                  <li>• Basic understanding of software architecture principles</li>
+                  <li>• Familiarity with software engineering practices</li>
+                  <li>• General knowledge of AI/ML concepts (helpful but not required)</li>
                 </ul>
               </div>
               <div>
                 <h4 className="text-lg font-semibold mb-3 text-gray-800">What to Bring</h4>
                 <ul className="space-y-2 text-gray-600">
-                  <li>• Laptop for hands-on exercises</li>
+                  <li>• Laptop for hands-on exercises with ArchCoPilot</li>
                   <li>• Notebook for taking notes</li>
-                  <li>• Questions and curiosity about AI in architecture</li>
+                  <li>• Questions about AI in software architecture</li>
                 </ul>
               </div>
             </div>
