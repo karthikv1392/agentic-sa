@@ -91,6 +91,66 @@ const OverviewSection = () => {
             </div>
           </div>
 
+          <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
+            <h3 className="text-2xl font-semibold mb-6 text-gray-800">
+              Learning Objectives
+            </h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <ul className="space-y-3">
+                <li className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <span className="text-gray-700">Recall key terminology and concepts related to AI-enabled software systems</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <span className="text-gray-700">Understand how LLMs can act as co-pilots in architecture-related tasks</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <span className="text-gray-700">Evaluate the fitness of architectural decisions produced by LLMs</span>
+                </li>
+              </ul>
+              <ul className="space-y-3">
+                <li className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <span className="text-gray-700">Critically assess the role of LLMs in software architecture practices</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <span className="text-gray-700">Analyze architectural implications of including LLMs or agentic AI components</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <span className="text-gray-700">Design multi-agent architecture for real-world case studies</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
+            <h3 className="text-2xl font-semibold mb-6 text-gray-800">
+              Target Audience
+            </h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="text-lg font-semibold mb-4 text-purple-600">Researchers</h4>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• Working at the intersection of SA and AI</li>
+                  <li>• Improving architecting practices for AI-enabled systems</li>
+                  <li>• Adoption of LLMs for SA research</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold mb-4 text-purple-600">Practitioners</h4>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• Architecting agentic AI systems</li>
+                  <li>• Exploring Generative AI for SA practices</li>
+                  <li>• Building AI-enabled software systems</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
           <div className="bg-white rounded-xl p-8 shadow-lg">
             <h3 className="text-2xl font-semibold mb-6 text-gray-800">
               Key Quality Attributes for AI-Enabled Systems

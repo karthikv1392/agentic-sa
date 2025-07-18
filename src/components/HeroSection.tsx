@@ -32,8 +32,7 @@ const HeroSection = () => {
           </div>
 
           <p className="text-xl md:text-2xl mb-12 text-gray-200 max-w-3xl mx-auto animate-fade-in">
-            Explore how Agentic AI is revolutionizing software architecture patterns, 
-            design principles, and development practices in this comprehensive tutorial.
+            A half-day tutorial exploring how to architect AI-enabled systems and use AI to enhance software architecture practices. Co-located with ECSA 2025, Cyprus.
           </p>
 
           <button 

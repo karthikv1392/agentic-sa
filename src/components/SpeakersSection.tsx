@@ -23,47 +23,51 @@ const SpeakersSection = () => {
                 University of L'Aquila, Italy
               </p>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Professor Henry Muccini is a leading expert in software architecture and 
-                engineering. His research focuses on software architecture design, analysis, 
-                and evolution, with particular emphasis on emerging technologies and AI integration.
+                Professor in Computer Science at the University of L'Aquila, Italy. His main research 
+                interests are Software Architecture, Model-based/-driven Engineering, and Quality Assurance. 
+                He is investigating how ML can be used for better architecting software systems and how to 
+                architect ML applications. Currently highly involved in Agentic AI architectures research. 
+                General co-chair of ICSA 2023, ECSA 2020, SC chair of ICSA, and member of the ECSA steering committee.
               </p>
               <div className="flex justify-center space-x-4">
-                <button className="flex items-center space-x-2 text-purple-600 hover:text-purple-800 transition-colors">
+                <a href="https://www.henrymuccini.com/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-purple-600 hover:text-purple-800 transition-colors">
                   <ExternalLink size={16} />
                   <span>Profile</span>
-                </button>
-                <button className="flex items-center space-x-2 text-purple-600 hover:text-purple-800 transition-colors">
+                </a>
+                <a href="mailto:henry.muccini@univaq.it" className="flex items-center space-x-2 text-purple-600 hover:text-purple-800 transition-colors">
                   <Mail size={16} />
                   <span>Contact</span>
-                </button>
+                </a>
               </div>
             </div>
 
-            {/* Tutorial Co-presenter (You) */}
+            {/* Karthik Vaidhyanathan */}
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all">
               <div className="w-32 h-32 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-full mx-auto mb-6 flex items-center justify-center">
-                <span className="text-white text-3xl font-bold">TC</span>
+                <span className="text-white text-3xl font-bold">KV</span>
               </div>
               <h3 className="text-2xl font-semibold text-center mb-2 text-gray-800">
-                Tutorial Co-Presenter
+                Karthik Vaidhyanathan
               </h3>
               <p className="text-blue-600 text-center mb-4 font-medium">
-                Industry Expert
+                SERC, IIIT-Hyderabad, India
               </p>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Bringing practical industry experience in implementing Agentic AI systems 
-                and modern software architecture patterns. Expertise in bridging the gap 
-                between academic research and real-world applications.
+                Assistant Professor at the Software Engineering Research Center, IIIT-Hyderabad. PhD from 
+                Gran Sasso Science Institute, Italy, postdoc at University of L'Aquila. Research interests 
+                lie in the intersection of software architecture and AI, focusing on sustainable and 
+                self-adaptive software systems. Working on using Generative AI for improving software 
+                architectural practices and agentic frameworks. 5+ years industrial experience.
               </p>
               <div className="flex justify-center space-x-4">
-                <button className="flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition-colors">
+                <a href="https://karthikvaidhyanathan.com/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition-colors">
                   <ExternalLink size={16} />
                   <span>Profile</span>
-                </button>
-                <button className="flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition-colors">
+                </a>
+                <a href="mailto:karthik.vaidhyanathan@iiit.ac.in" className="flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition-colors">
                   <Mail size={16} />
                   <span>Contact</span>
-                </button>
+                </a>
               </div>
             </div>
           </div>
