@@ -1,5 +1,7 @@
 
 import { ExternalLink, Mail } from "lucide-react";
+import karthikProfile from "@/assets/karthik-profile.jpg";
+import henryProfile from "@/assets/henry-profile.jpg";
 
 const SpeakersSection = () => {
   return (
@@ -13,11 +15,11 @@ const SpeakersSection = () => {
           <div className="grid md:grid-cols-2 gap-12">
             {/* Dr. Karthik Vaidhyanathan */}
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all">
-              <div className="w-32 h-32 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-full mx-auto mb-6 flex items-center justify-center">
-                <span className="text-white text-3xl font-bold">KV</span>
+              <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden shadow-lg">
+                <img src={karthikProfile} alt="Karthik Vaidhyanathan" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-2xl font-semibold text-center mb-2 text-gray-800">
-                Dr. Karthik Vaidhyanathan
+                Karthik Vaidhyanathan
               </h3>
               <p className="text-blue-600 text-center mb-4 font-medium">
                 SERC, IIIT-Hyderabad, India
@@ -43,8 +45,8 @@ const SpeakersSection = () => {
 
             {/* Henry Muccini */}
             <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all">
-              <div className="w-32 h-32 bg-gradient-to-br from-purple-400 to-blue-400 rounded-full mx-auto mb-6 flex items-center justify-center">
-                <span className="text-white text-3xl font-bold">HM</span>
+              <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden shadow-lg">
+                <img src={henryProfile} alt="Henry Muccini" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-2xl font-semibold text-center mb-2 text-gray-800">
                 Henry Muccini
