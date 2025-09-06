@@ -4,11 +4,14 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
-  base: "/agentic-sa/",
+export default defineConfig(({ mode, command }) => ({
+  base: command === 'build' ? "/agentic-sa/" : "/",
   server: {
     host: "::",
     port: 8080,
+  },
+  define: {
+    global: 'globalThis',
   },
   plugins: [
     react(),
