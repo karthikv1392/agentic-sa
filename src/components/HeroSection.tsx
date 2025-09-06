@@ -19,7 +19,7 @@ const HeroSection = () => {
           <div className="grid md:grid-cols-3 gap-6 mb-12 animate-fade-in">
             <div className="flex items-center justify-center space-x-2 bg-white/10 backdrop-blur-sm rounded-lg p-4">
               <Calendar className="h-6 w-6" />
-              <span className="text-lg">ECSA 2025</span>
+              <span className="text-lg"><a href="https://conf.researchr.org/home/ecsa-2025" target="_blank" rel="noopener noreferrer">ECSA 2025</a></span>
             </div>
             <div className="flex items-center justify-center space-x-2 bg-white/10 backdrop-blur-sm rounded-lg p-4">
               <MapPin className="h-6 w-6" />
@@ -32,7 +32,7 @@ const HeroSection = () => {
           </div>
 
           <p className="text-xl md:text-2xl mb-12 text-gray-200 max-w-3xl mx-auto animate-fade-in">
-            A half-day tutorial exploring how to architect AI-enabled systems and use AI to enhance software architecture practices. Co-located with ECSA 2025, Cyprus.
+            A half-day tutorial exploring how agentic AI can be used to enhance software architecture practices and further explore how to architect Agentic AI systems. Co-located with ECSA 2025, Cyprus.
           </p>
 
           <button 

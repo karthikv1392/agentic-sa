@@ -14,15 +14,6 @@ const ResourcesSection = () => {
       ]
     },
     {
-      title: "Recordings & Media",
-      icon: Video,
-      color: "blue",
-      resources: [
-        { name: "Tutorial Recording", type: "Video", icon: Video, available: false },
-        { name: "Q&A Session", type: "Video", icon: Video, available: false },
-      ]
-    },
-    {
       title: "Additional Reading",
       icon: ExternalLink,
       color: "green",
@@ -79,7 +70,7 @@ const ResourcesSection = () => {
             your learning journey in Agentic AI and Software Architecture.
           </p>
 
-          <div className="grid lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid lg:grid-cols-2 gap-8 mb-16">
             {resourceCategories.map((category, index) => {
               const colors = getColorClasses(category.color);
               return (

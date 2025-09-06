@@ -4,28 +4,28 @@ import { Clock, Coffee, Presentation, Users, Wrench } from "lucide-react";
 const ScheduleSection = () => {
   const schedule = [
     {
-      time: "09:00 - 09:05",
+      time: "14:00 - 14:05",
       title: "Welcome",
       description: "Tutorial overview and speaker introductions",
       icon: Users,
       type: "intro"
     },
     {
-      time: "09:05 - 09:25",
+      time: "14:05 - 14:30",
       title: "Session 1: Introducing Software Architecture for ML (SAML)",
       description: "Introduction to basic concepts in ML-enabled systems (10 mins) • Challenges in architecting AI-enabled systems through a case study (10 mins)",
       icon: Presentation,
       type: "session"
     },
     {
-      time: "09:25 - 10:00",
+      time: "14:25 - 15:30",
       title: "Session 2: LLMs for Software Architecture (LLM4SA)",
       description: "LLM for Software Architecture and terminology (35 mins)",
       icon: Presentation,
       type: "session"
     },
     {
-      time: "10:00 - 10:30",
+      time: "15:30 - 16:00",
       title: "Coffee Break",
       description: "Networking and refreshments",
       icon: Coffee,

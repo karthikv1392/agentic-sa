@@ -21,7 +21,7 @@ const Footer = () => {
                 <div className="flex items-center space-x-2">
                   <ExternalLink size={16} />
                   <a href="#" className="hover:text-white transition-colors">
-                    Conference Website
+                    <a href="https://conf.researchr.org/home/ecsa-2025" target="_blank" rel="noopener noreferrer">Conference Website</a>
                   </a>
                 </div>
               </div>
@@ -74,7 +74,7 @@ const Footer = () => {
               </p>
               <div className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors">
                 <Mail size={16} />
-                <a href="mailto:contact@tutorial.com">contact@tutorial.com</a>
+                <a href="mailto:karthik.vaidhyanathan@iiit.ac.in">karthik.vaidhyanathan@iiit.ac.in</a>
               </div>
             </div>
           </div>
