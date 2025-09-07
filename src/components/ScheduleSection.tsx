@@ -18,9 +18,9 @@ const ScheduleSection = () => {
       type: "session"
     },
     {
-      time: "14:25 - 15:30",
+      time: "14:30 - 15:30",
       title: "Session 2: LLMs for Software Architecture (LLM4SA)",
-      description: "LLM for Software Architecture and terminology (35 mins)",
+      description: "LLM for Software Architecture and terminology",
       icon: Presentation,
       type: "session"
     },
@@ -32,21 +32,14 @@ const ScheduleSection = () => {
       type: "break"
     },
     {
-      time: "10:30 - 11:30",
+      time: "16:00 - 17:25",
       title: "Session 2 Continuation: LLMs for Software Architecture",
       description: "Demo of ArchCoPilot tool (10 mins) • Discussions with the audience (20 mins) • Hands-on with ArchCoPilot (30 mins)",
       icon: Wrench,
-      type: "hands-on"
+      type: "hands-on and session"
     },
     {
-      time: "11:20 - 12:25",
-      title: "Session 3: Architecting Agentic AI Systems",
-      description: "Introduction to Agentic AI systems (15 mins) • Architecting Agentic AI systems (20 mins) • Case study: Agentic AI framework for autonomous CloudOps (10 mins) • Hands-on activity (20 mins)",
-      icon: Wrench,
-      type: "hands-on"
-    },
-    {
-      time: "12:25 - 12:30",
+      time: "17:25 - 17:30",
       title: "Tutorial Closing",
       description: "Final remarks and wrap-up",
       icon: Users,
