@@ -33,10 +33,10 @@ const ScheduleSection = () => {
     },
     {
       time: "16:00 - 17:25",
-      title: "Session 2 Continuation: LLMs for Software Architecture",
-      description: "Demo of ArchCoPilot tool (10 mins) • Discussions with the audience (20 mins) • Hands-on with ArchCoPilot (30 mins)",
+      title: "Session 3: SA for Agentic AI",
+      description: "Architecting Agentic AI systems • Case study: Agentic AI framework for autonomous CloudOps • Hands-on activity (20 mins)",
       icon: Wrench,
-      type: "hands-on and session"
+      type: "hands-on"
     },
     {
       time: "17:25 - 17:30",
