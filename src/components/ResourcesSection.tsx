@@ -8,19 +8,27 @@ const ResourcesSection = () => {
       icon: BookOpen,
       color: "purple",
       resources: [
-        { name: "Tutorial Slides", type: "PDF", icon: FileText, available: true },
-        { name: "Code Examples", type: "GitHub", icon: Code, available: true },
-        { name: "Hands-on Exercises", type: "PDF", icon: FileText, available: true },
-      ]
-    },
-    {
-      title: "Additional Reading",
-      icon: ExternalLink,
-      color: "green",
-      resources: [
-        { name: "Research Papers", type: "Links", icon: ExternalLink, available: true },
-        { name: "Recommended Books", type: "List", icon: BookOpen, available: true },
-        { name: "Online Resources", type: "Links", icon: ExternalLink, available: true },
+        { 
+          name: "Tutorial Slides", 
+          type: "PDF", 
+          icon: FileText, 
+          available: true,
+          url: "https://www.dropbox.com/scl/fi/owtp3wry2wtoak32ch0sj/SA_AgenticAI_ECSA_2025_Tutorial_Slides.pdf?rlkey=f026muob1uizhmmbzt2udsfmj&st=kp1gjhft&dl=0"
+        },
+        { 
+          name: "Hands-on Notebook: LLM4SA", 
+          type: "Colab Notebook", 
+          icon: Code, 
+          available: true,
+          url: "https://tinyurl.com/ecsa2025-agentic-1"
+        },
+        { 
+          name: "Hands-on Notebook: Agentic AI", 
+          type: "Colab Notebook", 
+          icon: FileText, 
+          available: true,
+          url: "https://tinyurl.com/ecsa2025-agentic-2"
+        },
       ]
     }
   ];
@@ -103,11 +111,16 @@ const ResourcesSection = () => {
                             !resource.available ? 'opacity-50 cursor-not-allowed' : ''
                           }`}
                           disabled={!resource.available}
+                          onClick={() => {
+                            if (resource.available && resource.url) {
+                              window.open(resource.url, '_blank', 'noopener,noreferrer');
+                            }
+                          }}
                         >
                           {resource.available ? (
                             <>
-                              <Download size={16} className="inline mr-1" />
-                              Access
+                              <ExternalLink size={16} className="inline mr-1" />
+                              Open
                             </>
                           ) : (
                             'Coming Soon'
