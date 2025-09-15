@@ -78,7 +78,7 @@ const ResourcesSection = () => {
             your learning journey in Agentic AI and Software Architecture.
           </p>
 
-          <div className="grid lg:grid-cols-2 gap-8 mb-16">
+          <div className="grid grid-cols-1 gap-8 mb-16">
             {resourceCategories.map((category, index) => {
               const colors = getColorClasses(category.color);
               return (
